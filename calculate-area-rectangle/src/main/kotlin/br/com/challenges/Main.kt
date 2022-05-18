@@ -9,6 +9,8 @@ fun main() {
     rectangle["Width"] = 5
     println("Atributos do retângulo - Alteração Width: ${toString(rectangle)}")
 
+    rectangle["Color"] = "Black"
+    println("Atributos do retângulo - Alteração Color: ${toString(rectangle)}")
 }
 
 
