@@ -1,4 +1,4 @@
-# Cálculo - Área de um retângulo
+# Desafio - Calcular área de um retângulo
 
 ---
 
