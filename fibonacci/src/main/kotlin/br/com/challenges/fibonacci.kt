@@ -13,7 +13,5 @@ fun fibonacci(numbers: IntRange) {
         val sumOfTerms = firstTerm + secondTerm
         firstTerm = secondTerm
         secondTerm = sumOfTerms
-
     }
-
 }
