@@ -6,7 +6,3 @@ fun main() {
     fizzBuzz(numbers)
 
 }
-
-
-
-
