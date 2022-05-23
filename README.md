@@ -18,7 +18,7 @@ Desafios resolvidos durante o treinamento Backend na Creditas
   $ git clone https://github.com/thais-sousa/kotlin-challenges-acs.git
   
   # Entrar no diretório
-  $ cd kotlin-challenges-acs.git
+  $ cd kotlin-challenges-acs
 
  ```
 ---
