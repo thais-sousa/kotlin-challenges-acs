@@ -17,21 +17,3 @@ fun main() {
     geometricForm.color = "Black"
     println(geometricForm.toString())
 }
-
-class Rectangle(
-    var width: Int,
-    var height: Int,
-    var color: String
-) {
-
-    fun calcArea(): Int{
-        return width * height
-    }
-
-    override fun toString(): String {
-        return "Width: $width, " +
-                "Height: $height, " +
-                "Color: $color, " +
-                "Área: ${this.calcArea()}"
-    }
-}
