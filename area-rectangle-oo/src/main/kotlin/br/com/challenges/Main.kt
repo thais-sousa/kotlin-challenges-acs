@@ -2,18 +2,18 @@ package br.com.challenges
 
 fun main() {
 
-    val geometricForm = Rectangle(
+    val polygon = Rectangle(
         width = 10,
         height = 10,
         color = "Red"
     )
 
-    println("Área do Retângulo: ${geometricForm.calcArea()}")
-    println(geometricForm.toString())
+    println("Área do Retângulo: ${polygon.calcArea()}")
+    println(polygon.toString())
 
-    geometricForm.width = 20
-    println(geometricForm.toString())
+    polygon.width = 20
+    println(polygon.toString())
 
-    geometricForm.color = "Black"
-    println(geometricForm.toString())
+    polygon.color = "Black"
+    println(polygon.toString())
 }

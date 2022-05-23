@@ -4,9 +4,8 @@ class Rectangle(
     var width: Int,
     var height: Int,
     var color: String
-) {
-
-    fun calcArea(): Int{
+): GeometricForm {
+    override fun calcArea(): Int{
         return width * height
     }
 
