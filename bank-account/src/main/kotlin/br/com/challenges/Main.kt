@@ -4,6 +4,8 @@ fun main() {
     val contaThais = Acount(numero = 1001, titular = "Thais", saldo = 100.0)
     contaThais.deposit(1000.0)
     println(contaThais.saldo)
+    contaThais.sac(5000.0)
+    println(contaThais.saldo)
 
 }
 
@@ -14,8 +16,14 @@ class Acount(
 ) {
     fun deposit(value: Double) {
         when {
-            value < 10000.0 -> saldo += value
+            value <= 10000.0 -> saldo += value
             else -> println("Não é possível depositar este valor. O valor máximo permitido para este depósito é de R$ 10.000,00")
+        }
+    }
+    fun sac (value: Double) {
+        when {
+            saldo > 0 && saldo >= value -> saldo -= value
+            else -> println("Não é possível sacar este valor")
         }
     }
 }
