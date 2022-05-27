@@ -1,44 +1,45 @@
 package br.com.challenges
 
-import javax.print.attribute.standard.Destination
-
 fun main() {
 
-    val contaThais = Account(numeroCta = 1001, titular = "Thais", saldo = 100.0)
-    contaThais.deposit(100.0)
-    println(contaThais.saldo)
-    contaThais.sac(250.0)
-    println(contaThais.saldo)
+    val contaThais = Account(numeroCta = 1001, titular = "Thais")
+    contaThais.deposit(150.0)
+    println(contaThais.accountBalance)
+    contaThais.sac(-50.0)
+    println("conta após saque: ${contaThais.accountBalance}")
 
-    val contaMarco = Account(numeroCta = 1002,  titular = "Marco", saldo = 0.0)
+    val contaMarco = Account(numeroCta = 1002, titular = "Marco")
     contaThais.transfer(contaMarco, 10000.0)
-    println(contaMarco.saldo)
-    println(contaThais.saldo)
+    println(contaMarco.accountBalance)
+    println(contaThais.accountBalance)
 
 }
 
 class Account(
-    val numeroCta: Int,
-    val titular: String,
-    var saldo: Double
+    numeroCta: Int,
+    titular: String
 ) {
+    var accountBalance = 0.0
+        private set
+
+    val limiteValue = 10000.0
     fun deposit(value: Double) {
         when {
-            value <= 10000.0 -> this.saldo += value
-            else -> throw IllegalArgumentException("O valor máximo permitido para depósito é de R$ 10.000,00 $numeroCta $titular")
+            value > 0 && value <= limiteValue -> this.accountBalance += value
+            else -> throw IllegalArgumentException("O valor para depósito deve ser positivo e de no máximo R$ 10.000,00")
         }
     }
 
     fun sac(value: Double) {
         when {
-            saldo > 0 && saldo >= value -> saldo -= value
+            accountBalance > 0 && accountBalance >= value -> accountBalance -= value
             else -> throw IllegalArgumentException("Não é possível sacar este valor!")
         }
     }
 
-    fun transfer (destinationAccount: Account, value: Double) {
-        if(saldo >= value && value <= 10000.0 ) {
-            saldo -= value
+    fun transfer(destinationAccount: Account, value: Double) {
+        if (accountBalance >= value && value <= limiteValue) {
+            accountBalance -= value
             destinationAccount.deposit(value)
         } else
             throw IllegalArgumentException("Não é permitido transferir este valor!")
