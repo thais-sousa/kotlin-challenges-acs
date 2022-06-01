@@ -1,6 +1,10 @@
 package br.com.challenges
 
-class Bat : Animal, Mammal() {
+class Bat : Mammal {
+    override fun itsMammal(): String {
+        return "É um mamífero"
+    }
+
     override fun move(): String {
         return "Voa"
     }
