@@ -1,6 +1,10 @@
 package br.com.challenges
 
-class Bird : Animal, Oviparous() {
+class Bird : Oviparous {
+    override fun oviposition(): String {
+        return "Bota ovos"
+    }
+
     override fun move(): String {
         return "Voa"
     }

@@ -1,6 +1,10 @@
 package br.com.challenges
 
-class Whale : Animal, Mammal() {
+class Whale : Mammal {
+    override fun itsMammal(): String {
+        return "É um mamífero"
+    }
+
     override fun move(): String {
         return "Nada na água"
     }

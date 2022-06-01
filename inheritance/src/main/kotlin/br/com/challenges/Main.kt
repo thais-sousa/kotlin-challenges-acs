@@ -18,4 +18,13 @@ fun main() {
 
     val einstein = Einstein()
     println("Einstein: ${einstein.move()}, ${einstein.emitsSound()}, ${einstein.isAlive()}, ${einstein.itsMammal()}")
+
+    val penguin = Penguin()
+    println("Penguin: ${penguin.move()}, ${penguin.emitsSound()}, ${penguin.oviposition()}")
+
+    val platypus = Platypus()
+    println("Platypus: ${platypus.move()}, ${platypus.emitsSound()}, ${platypus.oviposition()}, ${platypus.itsMammal()}")
+
+    val bat = Bat()
+    println("Bat: ${bat.move()}, ${bat.emitsSound()}, ${bat.itsMammal()}")
 }

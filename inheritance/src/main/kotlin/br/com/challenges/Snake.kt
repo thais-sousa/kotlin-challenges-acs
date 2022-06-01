@@ -1,6 +1,10 @@
 package br.com.challenges
 
-class Snake : Animal, Oviparous() {
+class Snake : Oviparous {
+    override fun oviposition(): String {
+        return "Bota ovos"
+    }
+
     override fun move(): String {
         return "Rasteja pelo chão"
     }
