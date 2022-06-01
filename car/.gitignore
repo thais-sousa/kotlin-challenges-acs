@@ -1,0 +1,75 @@
+.DS_Store
+.idea / estante
+/ confluência / alvo
+/ dependências / repositório
+/android.tests.dependencies _
+/ dependencies / android.tests.dependencies
+/ distância
+/ local
+/ gh-pages
+/ ideiaSDK
+/ clionSDK
+/ android-studio / sdk
+fora /
+/ tmp
+/ inteligência
+workspace.xml
+* .versionsBackup
+/ idea / testData / depurador / tinyApp / classes *
+/ jps-plugin / testData / kannotator
+/js/js.translator/testData/out/ _ _ _ _ _ _ _ _
+/js/js.translator/testData/out-min/ _ _ _ _ _ _ _ _
+/js/js.translator/testData/out-pir/ _ _ _ _ _ _ _ _
+.gradle /
+construir /
+! ** / src / ** / construir
+! ** / teste / ** / compilação
+* .iml
+! ** / testData / ** / * .iml
+.idea / remote-targets.xml
+.idea / bibliotecas / Gradle * .xml
+.idea / bibliotecas / Maven * .xml
+.idea / artefatos / PILL_ * .xml
+.idea / artefatos / KotlinPlugin.xml
+.idea / módulos
+.idea / runConfigurations / JPS_ * .xml
+.idea / runConfigurations / PILL_ * .xml
+.idea / runConfigurations / _FP_ * .xml
+.idea / runConfigurations / _MT_ * .xml
+.idea / bibliotecas
+.idea / modules.xml
+.idea / gradle.xml
+.idea / compilador.xml
+.idea / InspectionProfiles / profiles_settings.xml
+.idea / .name
+.idea / artefatos / dist_auto_ *
+.idea / artefatos / dist.xml
+.idea / artefatos / ideaPlugin.xml
+.idea / artefatos / kotlinc.xml
+.idea / artefatos / kotlin_compiler_jar.xml
+.idea / artefatos / kotlin_plugin_jar.xml
+.idea / artefatos / kotlin_jps_plugin_jar.xml
+.idea / artefatos / kotlin_daemon_client_jar.xml
+.idea / artefatos / kotlin_imports_dumper_compiler_plugin_jar.xml
+.idea / artefatos / kotlin_main_kts_jar.xml
+.idea / artefatos / kotlin_compiler_client_embeddable_jar.xml
+.idea / artefatos / kotlin_reflect_jar.xml
+.idea / artefatos / kotlin_stdlib_js_ir_ *
+.idea / artefatos / kotlin_test_js_ir_ *
+.idea / artefatos / kotlin_stdlib_wasm_ *
+.idea / artefatos / kotlinx_atomicfu_runtime_ *
+.idea / artefatos / kotlinx_cli_jvm_ *
+.idea / jarRepositories.xml
+.idea / csv-plugin.xml
+.idea / library-with-intellij-classes.xml
+.idea / misc.xml
+node_modules /
+.rpt2_cache /
+bibliotecas / ferramentas / kotlin-test-js-runner / lib /
+propriedades.local
+buildSrcTmp /
+distTmp /
+outTmp /
+/teste.saída _
+/ kotlin-native / dist
+kotlin-ide /
