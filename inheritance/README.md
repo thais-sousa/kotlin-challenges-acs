@@ -24,4 +24,7 @@ Faria sentido adicionar uma classe Reptile, FlyingAnimal ou WalkingAnimal?
 
 - Se não, por que não?
 
+  - _Não faria sentido, considerando que há uma interface "Animal", que todos os animais a implementam, cujo um dos métodos é como o animal se move, o que já abrange reptéis, animais que voam e animais que andam._
+  
+
 - Se sim, quais métodos/atributos ela teria e como se encaixaria na herança entre as classes?
