@@ -9,4 +9,11 @@ class Car(val engine: Engine) {
             else -> "Nota A - O motor não é prejudicial ao meio ambiente e usa combustível não fóssil"
         }
     }
+
+    fun extinguisher(): String{
+        return when {
+            engine.useFlammableFuel() -> "Este carro precisa conter um extintor!"
+            else -> "Este carro não precisa conter um extintor!"
+        }
+    }
 }
