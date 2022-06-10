@@ -2,7 +2,7 @@
 
 ---
 
-Fazer um script kotlin que imprima a sequencia fibonacci.
+Fazer um script kotlin que imprima a sequencia fibonacci
 
 **Descrição:**
 
@@ -13,4 +13,4 @@ A sequência Fibonacci são os números que são formados no padrão abaixo:
 Ressaltando que a sequência Fibonacci é infinita.
 Para cumprir o desafio foi sugerido definir um valor que tenha como objetivo, por exemplo '100'.
 
-O desafio foi cumprido definindo como objetivo, imprimir os 15 primeiros termos da sequência.
+> O desafio foi cumprido definindo como objetivo, imprimir os 15 primeiros termos da sequência.
