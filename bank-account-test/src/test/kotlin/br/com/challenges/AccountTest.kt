@@ -78,18 +78,11 @@ internal class AccountTest {
 
     //transfer
     @Test
-    fun `must make a successful transfer if the amount is equal to the account balance`() {
+    fun `must make a successful transfer if the amount is less than the account balance`() {
         accountMonteiro.transfer(accountThais, 200.0)
+
         assertEquals(0.0, accountMonteiro.accountBalance)
         assertEquals(300.0, accountThais.accountBalance)
-    }
-
-    @Test
-    fun `must make a successful transfer if the amount is less than the account balance`() {
-        accountMonteiro.transfer(accountThais, 100.0)
-
-        assertEquals(100.0, accountMonteiro.accountBalance)
-        assertEquals(200.0, accountThais.accountBalance)
     }
 
     @Test
