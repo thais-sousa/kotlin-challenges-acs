@@ -15,8 +15,24 @@ internal class AccountTest {
 
     @BeforeEach
     fun init() {
-        accountThais = Account(numberAccount = 1001, nameClient = "Thais", accountBalance = 100.0)
-        accountMonteiro = Account(numberAccount = 1002, nameClient = "Monteiro", accountBalance = 200.0)
+        accountThais = Account(nameClient = "Thais", numberAccount = 1001,  accountBalance = 100.0)
+        accountMonteiro = Account(nameClient = "Monteiro", numberAccount = 1002, accountBalance = 200.0)
+    }
+
+    //checkAccountBalance
+    @Test
+    fun `should throw an exception if the balance is negative`() {
+        assertThrows<IllegalArgumentException> {
+            accountThais.checkAccountBalance(accountBalance = -100.0)
+        }
+    }
+
+    //registrationAccount
+    @Test
+    fun `throws an exception if an account is registered greater than 1002`() {
+        assertThrows<java.lang.IllegalArgumentException> {
+            accountThais.registrationAccount(1003)
+        }
     }
 
     //deposit
@@ -55,10 +71,10 @@ internal class AccountTest {
 
     //sac
     @Test
-    fun `must successfully withdraw $100`() {
-        accountThais.sac(100.0)
+    fun `makes a successful withdrawal if the amount is less than the account balance`() {
+        accountThais.sac(80.0)
 
-        assertEquals(0.0, accountThais.accountBalance)
+        assertEquals(20.0, accountThais.accountBalance)
     }
 
     @Test
