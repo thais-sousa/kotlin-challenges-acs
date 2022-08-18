@@ -3,7 +3,7 @@ package br.com.challenges
 fun main() {
 
 	//Criando a conta e testando os métodos
-	val accountThais = Account(numberAccount = 1001, nameClient = "Thais", accountBalance = 100.0)
+	val accountThais = Account(numberAccount = 1002, nameClient = "Thais", accountBalance = 100.0)
 	println("Dados da Conta ${accountThais.numberAccount}: Nome do Titular = ${accountThais.nameClient}, Saldo da conta ${accountThais.accountBalance}")
 	accountThais.deposit(200.0)
 	println("Saldo conta Thais após depósito: ${accountThais.accountBalance}")

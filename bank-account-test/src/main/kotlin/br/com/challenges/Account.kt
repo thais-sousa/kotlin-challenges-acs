@@ -1,12 +1,37 @@
 package br.com.challenges
 
 class Account(
-    val numberAccount: Int,
-    val nameClient: String,
     accountBalance: Double,
 ) {
+    var nameClient = ""
+    var numberAccount = 0
+        private set
     var accountBalance = accountBalance
         private set
+
+    constructor(nameClient: String, numberAccount: Int, accountBalance: Double) : this(accountBalance) {
+
+        this.nameClient = nameClient
+        registrationAccount(numberAccount)
+        checkAccountBalance(this.accountBalance)
+    }
+
+    fun registrationAccount(numberAccount: Int) {
+        if (numberAccount > 1002) {
+            throw IllegalArgumentException("Número de conta inválido")
+        } else {
+            this.numberAccount = numberAccount
+        }
+    }
+
+    fun checkAccountBalance(accountBalance: Double) {
+        if (accountBalance >= 0.0){
+            this.accountBalance = accountBalance
+        } else {
+            throw IllegalArgumentException("O valor não pode ser negativo")
+        }
+
+    }
 
     private val limiteValue = 10000.0
 
